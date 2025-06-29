@@ -1,6 +1,6 @@
-import { Schema, model } from 'mongoose';
+const mongoose = require('mongoose');
 
-const UserSchema = new Schema({
+const UserSchema = new mongoose.Schema({
   profilePhoto: {
     type: String,
     required: true
@@ -56,4 +56,4 @@ const UserSchema = new Schema({
   }
 }, { timestamps: true });
 
-export default model('User', UserSchema);
+module.exports = mongoose.model('User', UserSchema);
