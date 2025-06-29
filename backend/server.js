@@ -3,8 +3,8 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
 const PORT = 5000;
+const user = require('../models/user');
 const userRoutes = require('./routes/userRoutes');
-const user = require('../models/user')
 const locationRoutes = require('./routes/locationRoutes');
 
 
