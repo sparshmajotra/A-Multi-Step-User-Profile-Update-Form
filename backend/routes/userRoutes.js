@@ -1,8 +1,9 @@
 const express = require("express");
 const router = express.Router();
 const multer = require("multer");
-const User = require("../models/User");
+const User = require("../models/User").default;
 const bcrypt = require("bcrypt");
+
 
 // set up multer for profile photo
 const storage = multer.diskStorage({
