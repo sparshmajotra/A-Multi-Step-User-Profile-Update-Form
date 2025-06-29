@@ -5,7 +5,7 @@ const app = express();
 const PORT = 5000;
 const userRoutes = require('./routes/userRoutes');
 const locationRoutes = require('./routes/locationRoutes');
-const User = require('../models/User');
+const User = require('../models/user');
 
 
 // Middleware
